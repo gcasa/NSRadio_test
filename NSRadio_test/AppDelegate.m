@@ -16,6 +16,9 @@
 - (IBAction)radioAction:(id)sender {
 }
 
+- (IBAction)radioAction2:(id)sender {
+}
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
 }
