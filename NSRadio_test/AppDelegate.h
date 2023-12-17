@@ -9,6 +9,13 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
+@property IBOutlet NSButton *radio1;
+@property IBOutlet NSButton *radio2;
+@property IBOutlet NSButton *radio3;
+
+- (IBAction) radio1: (id)sender;
+- (IBAction) radio2: (id)sender;
+- (IBAction) radio3: (id)sender;
 
 @end
 

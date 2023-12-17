@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="20037" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="22505" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="20037"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="22505"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -14,6 +15,9 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
             <connections>
+                <outlet property="radio1" destination="okQ-H9-of7" id="scJ-Ra-Hfl"/>
+                <outlet property="radio2" destination="L4D-mP-Rzp" id="Rhg-HI-0Lz"/>
+                <outlet property="radio3" destination="oGY-a7-rjc" id="ifU-Z2-w5T"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
@@ -697,7 +701,7 @@
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="radioAction:" target="Voe-Tx-rLC" id="6QL-nP-rkq"/>
+                            <action selector="radio1:" target="Voe-Tx-rLC" id="yVo-pX-ewD"/>
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oGY-a7-rjc">
@@ -708,7 +712,7 @@
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="radioAction:" target="Voe-Tx-rLC" id="CNU-4Y-kUH"/>
+                            <action selector="radio3:" target="Voe-Tx-rLC" id="stx-PU-ewK"/>
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L4D-mP-Rzp">
@@ -719,7 +723,7 @@
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="radioAction2:" target="Voe-Tx-rLC" id="Vdv-oT-qaB"/>
+                            <action selector="radio2:" target="Voe-Tx-rLC" id="2hG-uP-aGe"/>
                         </connections>
                     </button>
                 </subviews>

@@ -10,13 +10,24 @@
 @interface AppDelegate ()
 
 @property (strong) IBOutlet NSWindow *window;
+
 @end
 
 @implementation AppDelegate
-- (IBAction)radioAction:(id)sender {
+
+- (IBAction) radio1: (id)sender
+{
+    NSLog(@"%@", NSStringFromSelector(_cmd));
 }
 
-- (IBAction)radioAction2:(id)sender {
+- (IBAction) radio2: (id)sender
+{
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+}
+
+- (IBAction) radio3: (id)sender
+{
+    NSLog(@"%@", NSStringFromSelector(_cmd));
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
